@@ -1,0 +1,276 @@
+html {
+    font-size: 62.5%
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.img-header {
+  position: relative;
+  display: flex;
+}
+.img-header__background-img {
+  display: block;
+  width: 100%;
+}
+.img-header__instagram-wrap {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.img-header__instagram-wrap:hover,
+.img-header__instagram-wrap:focus {
+  text-decoration: underline;
+}
+.img-header__instagram-wrap:focus {
+  outline: 1px dashed currentColor;
+  outline-offset: 5px;
+}
+.img-header__instagram-logo {
+  display: block;
+  width: 20px;
+}
+.img-header__hashtag {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 1.524rem;
+  margin-left: 5px;
+}
+
+.nav {
+  padding: 20px 0;
+  background-color: #fff;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.11);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.11);
+}
+.nav__ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+.nav__li {
+  margin: 10px 0;
+}
+.nav__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0px 20px;
+  position: relative;
+  letter-spacing: .1em;
+}
+.nav__link::after {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  content: "";
+  transition: opacity .2s;
+}
+.nav__link:focus {
+  outline: none
+}
+.nav__link:hover::after,
+.nav__link:focus::after {
+  opacity: 1; 
+  outline: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0 70px;
+  background-color: #fbfafa
+}
+.hero__hot-dog-img {
+  width: 92px;
+  margin: auto;
+  display: block;
+}
+.hero__title {
+  font-family: "Open Sans", sans-serif;
+  color: #555559;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -.04em;
+  padding: 0 20px;
+  text-align: center;
+  margin: 20px 0 60px;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  transition: .2s;
+  border-radius: 6px;
+  background-color: #286782;
+  padding: 18px 30px;
+  font-size: 20px;
+  letter-spacing: -.04em;
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  background-color: #143441;
+}
+.button:focus {
+  outline: 1px dashed #143441;
+  outline-offset: 5px;
+}
+
+.hotdog-styles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotdog-styles__img {
+  width: 100%;
+  display: block;
+}
+.hotdog-styles__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30% 0 30% 10%;
+}
+.hotdog-styles__text-wrap {
+  width: 70%;
+}
+.hotdog-styles__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -.04em;
+  font-size: 2.4rem;
+  color: #555559;
+  margin-bottom: 25px;
+  position: relative;
+}
+.hotdog-styles__title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 31px;
+  right: 104%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #286782;
+}
+.hotdog-styles__body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: -.04em;
+  font-size: 18px;
+  color: #555559;
+}
+
+.footer {
+  background-color: #fbfafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer__text {
+  font-family: "Open Sans", sans-serif;
+  color: #555559;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 5px 0;
+}
+.footer__text:focus {
+  text-decoration: underline;
+  outline: 1px dashed currentColor;
+  outline-offset: 5px;
+}
+.footer__text--link:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 820px) {
+  .nav {
+    padding: 36px;
+  }
+  .nav__li {
+    margin: 0 0;
+  }
+  .nav__link {
+    font-size: 2rem;
+    margin: 5px 35px;
+  }
+  .hero {
+    padding: 110px 0 170px;
+  }
+  .hero__title {
+    font-size: 5.6rem;
+  }
+
+  .hotdog-styles__img {
+    width: 50%;
+  }
+  .hotdog-styles__description {
+    width: 50%;
+    padding: 0;
+  }
+  
+  .hotdog-styles__description--beef {
+    order: 1;
+  }
+  .hotdog-styles__img--beef {
+    order: 2;
+  }
+  .hotdog-styles__img--vegan {
+    order: 3;
+  }
+  .hotdog-styles__description--vegan {
+    order: 4;
+  }
+  .hotdog-styles__description--vegetarian {
+    order: 5;
+  }
+  .hotdog-styles__img--vegetarian {
+    order: 6;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .footer__section--second {
+    display: flex;
+  }
+  .footer__section--second .footer__text {
+    margin: 0;
+    position: relative;
+  }
+  .footer__section--second .footer__text:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: currentColor;
+    display: inline-block;
+    margin: 0 13px;
+    vertical-align: middle;
+  }
+}
