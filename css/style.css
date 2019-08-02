@@ -136,15 +136,15 @@ html {
   outline-offset: 5px;
 }
 
-.hotdog-styles {
+.hot-dog-styles {
   display: flex;
   flex-wrap: wrap;
 }
-.hotdog-styles__img {
+.hot-dog-styles__img {
   width: 100%;
   display: block;
 }
-.hotdog-styles__description {
+.hot-dog-styles__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,10 +152,10 @@ html {
   width: 100%;
   padding: 30% 0 30% 10%;
 }
-.hotdog-styles__text-wrap {
+.hot-dog-styles__text-wrap {
   width: 70%;
 }
-.hotdog-styles__title {
+.hot-dog-styles__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: -.04em;
@@ -164,7 +164,7 @@ html {
   margin-bottom: 25px;
   position: relative;
 }
-.hotdog-styles__title::before {
+.hot-dog-styles__title::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -175,7 +175,7 @@ html {
   margin: auto;
   background-color: #286782;
 }
-.hotdog-styles__body {
+.hot-dog-styles__body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   letter-spacing: -.04em;
@@ -226,30 +226,30 @@ html {
     font-size: 5.6rem;
   }
 
-  .hotdog-styles__img {
+  .hot-dog-styles__img {
     width: 50%;
   }
-  .hotdog-styles__description {
+  .hot-dog-styles__description {
     width: 50%;
     padding: 0;
   }
   
-  .hotdog-styles__description--beef {
+  .hot-dog-styles__description--beef {
     order: 1;
   }
-  .hotdog-styles__img--beef {
+  .hot-dog-styles__img--beef {
     order: 2;
   }
-  .hotdog-styles__img--vegan {
+  .hot-dog-styles__img--vegan {
     order: 3;
   }
-  .hotdog-styles__description--vegan {
+  .hot-dog-styles__description--vegan {
     order: 4;
   }
-  .hotdog-styles__description--vegetarian {
+  .hot-dog-styles__description--vegetarian {
     order: 5;
   }
-  .hotdog-styles__img--vegetarian {
+  .hot-dog-styles__img--vegetarian {
     order: 6;
   }
   .footer {
